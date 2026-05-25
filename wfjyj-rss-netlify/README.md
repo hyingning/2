@@ -1,4 +1,4 @@
-﻿# 潍坊市教育局公告公示 RSS Feed - Netlify 部署
+﻿# 市教育局公告公示 RSS Feed - Netlify 部署
 
 ## 一键部署
 
