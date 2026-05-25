@@ -1,0 +1,35 @@
+﻿[build]
+  command = "echo 'Static site, no build needed'"
+  functions = "netlify/functions"
+
+[build.processing]
+  skip_processing = true
+
+[[redirects]]
+  from = "/"
+  to = "/.netlify/functions/rss"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/rss"
+  to = "/.netlify/functions/rss"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/rss.xml"
+  to = "/.netlify/functions/rss"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/feed"
+  to = "/.netlify/functions/rss"
+  status = 200
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=600, s-maxage=600"
